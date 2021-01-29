@@ -75,8 +75,8 @@
 	width: 29px;
 }
 
-.navBarTour {
-	/* background: none; */
+.xIcon {
+	height: 20px;
 }
 
 .cityNameTitle {
@@ -127,6 +127,43 @@
 	color: var(--rich-purple);
 }
 
+.sideMenu {
+	width: 70%;
+	height: 75%;
+	display: none;
+	z-index: 10;
+	position: absolute;
+	background: white;
+	border-radius: 0 0 16px 0;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.sideMenuClose img {
+	height: 25px;
+	margin-left: 85%;
+	margin-top: 15px;
+}
+
+.sideMenuList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.sideMenuList a {
+	border-bottom: 1px solid lightgray;
+	width: 75%;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	text-decoration: none;
+	color: var(--rich-purple);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+}
+
 .hotelCards {
 	display: flex;
 	flex-direction: column;
@@ -143,7 +180,7 @@
 }
 
 .sfors-tour {
-	height: 1800px;
+	/* height: 1800px; */
 }
 
 .sfors-tour-header {
@@ -152,7 +189,7 @@
 	background-repeat: no-repeat;
 	background-image: url('./img/sfors-tour-header.png');
 	height: 300px;
-	border-radius: 8px;
+	border-radius: 0 0 8px 8px;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -202,10 +239,6 @@
 	position: absolute;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-}
-
-.tour-stops * {
-	/* border: 1px solid lightblue; */
 }
 
 .tour-stop {
@@ -346,6 +379,130 @@
 
 .tour-stop-distance-map-icon img {
 	height: 18px;
+}
+
+.sfors-tour-stop-page-image {
+	width: 100%;
+	background-repeat: no-repeat;
+	height: 300px;
+	border-radius: 0 0 8px 8px;
+	background-size: cover;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#sfors-tour-stop-page-image-1 {
+	background-image: url('https://planning-org-uploaded-media.s3.amazonaws.com/legacy_resources/greatplaces/spaces/2010/img/ferrybuilding01.jpg');
+}
+
+#sfors-tour-stop-page-image-2 {
+	background-image: url('./img/343-sansome.png');
+}
+
+#sfors-tour-stop-page-image-3 {
+	background-image: url('https://tclf.org/sites/default/files/thumbnails/image/5909169218_0d98908c5f_o.jpg');
+}
+
+#sfors-tour-stop-page-image-4 {
+	background-image: url('https://images.squarespace-cdn.com/content/v1/514a2911e4b0896b36342655/1364949896616-MAM2V5W16HC610XO21I1/ke17ZwdGBToddI8pDm48kJ-0gbVWabSiDC314XPxdgN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdhG9ksZjhA6XJk3Mj5_fpdU3K5r2-RjiYOH2RqDNq3i86iGyAHoWEzl9kO54n1N1Q/image-asset.jpeg');
+}
+
+#sfors-tour-stop-page-image-5 {
+	background-image: url('./img/dragon-gate.png');
+}
+
+#sfors-tour-stop-page-image-6 {
+	background-image: url('https://img.hoodline.com/uploads/story/image/33548/intxanadu.png');
+}
+
+#sfors-tour-stop-page-image-7 {
+	background-image: url('./img/union-square.png');
+}
+
+#sfors-tour-stop-page-image-8 {
+	background-image: url('./img/yerba-buena.png');
+}
+
+#sfors-tour-stop-page-image-9 {
+	background-image: url('./img/sf-moma.png');
+}
+
+#sfors-tour-stop-page-image-10 {
+	background-image: url('./img/140-montgomery.png');
+}
+
+#sfors-tour-stop-page-image-11 {
+	background-image: url('./img/salesforce-park.png');
+}
+
+#sfors-tour-stop-page-image-12 {
+	background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/60/ad/5b/rincon-center.jpg');
+}
+
+.sfors-tour-stop-page-title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	margin-left: 30px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 28px;
+	color: var(--rich-purple);
+}
+
+.sfors-tour-stop-page-details {
+	margin-left: 30px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+.orange-stop-icon img {
+	height: 32px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.sfors-tour-stop-page-stop-number {
+	margin: 0 15px 4px 15px;
+	font-size: 20px;
+}
+
+.small-orange-map-icon-stop img {
+	height: 25px;
+}
+
+.sfors-tour-stop-page-description {
+	text-indent: 30px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 15px;
+	font-weight: 300;
+}
+
+.sfors-tour-stop-page-description p {
+	margin-bottom: 18px;
+}
+
+.next-stop {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.next-stop a {
+	height: 30px;
+	width: 80px;
+	border-radius: 30px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	margin: 15px;
+	text-transform: uppercase;
+	background-color: var(--rich-purple);
 }
 
 @media only screen and (min-width: 416px) {
