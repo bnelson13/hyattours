@@ -24,12 +24,87 @@
 
 /* font-family: 'DM Serif Display', serif; */
 
+.sfors-background {
+	background-image: url('./img/sfors-main.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.sfors-background img {
+	visibility: hidden;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.sfors-background h1 {
+	font-size: 40px;
+	font-weight: 400;
+	position: absolute;
+	font-family: 'Open sans', sans-serif;
+	color: white;
+	text-align: center;
+	transform: translateY(80vw);
+}
+
+.sfors-background-button {
+	height: 75vw;
+	width: 100%;
+	z-index: 10;
+	transform: translateY(1007vw);
+	position: absolute;
+	border: 1px solid red;
+}
+
+.sfors-activities-background {
+	display: none;
+	background-image: url('./img/sfors-main-attractions.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.sfors-activities-background img {
+	visibility: hidden;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.sfors-activities-background h1 {
+	font-size: 40px;
+	font-weight: 400;
+	position: absolute;
+	font-family: 'Open sans', sans-serif;
+	color: white;
+	text-align: center;
+	transform: translateY(80vw);
+}
+
+.sfors-activities-background-button {
+	height: 31vw;
+	width: 100%;
+	z-index: 10;
+	transform: translateY(242vw);
+	position: absolute;
+	border: 1px solid red;
+}
+
 .main-background {
+	display: none;
 	width: 100%;
 	background-position: 25%;
 	position: absolute;
 	background-repeat: no-repeat;
-	/* background-size: auto 100%; */
+	background-size: cover;
+	background-image: url('./img/main-background-dim.png');
+	background-attachment: fixed;
+}
+
+.after-main-background {
+	width: 100%;
+	background-position: 25%;
+	position: absolute;
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url('./img/main-background-dim.png');
 	background-attachment: fixed;
@@ -503,6 +578,14 @@
 
 @media only screen and (min-width: 416px) {
 	.main-background {
+		display: none;
+	}
+
+	.sfors-background {
+		display: none;
+	}
+
+	.sfors-activities-background {
 		display: none;
 	}
 
