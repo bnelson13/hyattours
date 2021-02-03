@@ -25,6 +25,8 @@
 /* font-family: 'DM Serif Display', serif; */
 
 .sfors-background {
+	/* Turned Off the Hyatt pages for now */
+	display: none;
 	background-image: url('./img/sfors-main.png');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -90,7 +92,7 @@
 }
 
 .main-background {
-	display: none;
+	/* display: none; */
 	width: 100%;
 	background-position: 25%;
 	position: absolute;

@@ -2,43 +2,40 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-
-		<meta
-			name="viewport"
-			content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
-		/>
-		<link
-			rel="shortcut icon"
-			href="https://www.hyatt.com/hds/bellhop/9.1.0/images/favicons/favicon.ico"
-			type="image/x-icon"
-		/>
-		<link rel="apple-touch-icon" href="./img/apple-touch.png" />
-		<link rel="stylesheet" href="style.css" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@300;400;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300;400;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
-		<title>Hyattours</title>
+		<link rel="stylesheet" href="./style/style.css" />
+		<title>hyattours</title>
 	</head>
-	<body ontouchstart="">
+	<body>
 		<div class="phone-wrap">
 			<h1>Please visit this site on a mobile device</h1>
 		</div>
-		<div class="sfors-background">
-			<h1>Scroll Down to Local Attractions</h1>
-			<div class="sfors-background-button"></div>
-			<img src="./img/sfors-main.png" alt="" />
+		<div class="welcome-page">
+			<div class="hyattours-logo">
+				<p>hyattours</p>
+			</div>
+			<div class="welcome-page-loader">
+				<div class="welcome-page-menu-holder">
+					<img class="walking-tour-logo" src="./img/logo-walking-tour.png" alt="" />
+					<a class="hyatt-logo" href="https://www.hyatt.com/" target="_blank">
+						<img src="./img/logo-hyatt-corp.png" alt="" />
+					</a>
+					<div class="start-tour-button">
+						<span>Start Tour</span>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="sfors-activities-background">
-			<h1>Scroll Down to Walking Tour</h1>
-			<div class="sfors-activities-background-button"></div>
-			<img src="./img/sfors-main-attractions.png" alt="" />
-		</div>
-		<div class="main-background main-background-height">
 			<div class="navBar">
 				<div class="sideMenuButton">
-					<img src="./img/side-menu-button.png" alt="" />
+					<img src="../img/side-menu-button.png" alt="" />
 				</div>
 				<div class="hyattoursLogo">
 					<a href="index.html">hyattours</a>
@@ -47,14 +44,14 @@
 			</div>
 			<div class="sideMenu">
 				<div class="sideMenuClose">
-					<img src="./img/x-icon.png" alt="" />
+					<img src="../img/x-icon.png" alt="" />
 				</div>
 				<div class="sideMenuList">
 					<a href="index.html">Home</a>
-					<a href="./pages/hotels.html">All Hotels</a>
+					<a href="../pages/hotels.html">All Hotels</a>
 					<a href="https://www.hyatt.com/">Hyatt.com</a>
 					<a href="https://about.hyatt.com/en/contact.html">Contact Us</a>
-					<a href="./pages/faq.html">FAQ</a>
+					<a href="../pages/faq.html">FAQ</a>
 				</div>
 			</div>
 			<div class="cityNameTitle">
@@ -62,14 +59,13 @@
 			</div>
 			<div class="hyattLogo">
 				<a href="https://www.hyatt.com" target="_blank">
-					<img class="hyattLogoImg" src="./img/hyatt-logo.png" alt="" />
+					<img class="hyattLogoImg" src="../img/hyatt-logo.png" alt="" />
 				</a>
 			</div>
 			<div class="startTourButton">
-				<a href="./pages/hotels.html"> Start Tour </a>
+				<a href="../pages/hotels.html"> Start Tour </a>
 			</div>
-		</div>
-		<script src="app.js"></script>
-		<script src="appMain.js"></script>
+		</div> -->
+		<script src="./js/app.js"></script>
 	</body>
 </html>

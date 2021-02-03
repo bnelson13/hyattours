@@ -1,0 +1,401 @@
+/* CSS Reset */
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	width: 100vw;
+	height: calc(var(--vh, 1vh) * 100);
+	overflow: hidden;
+}
+
+/* Colors */
+
+:root {
+	--hyatt-purple: #63619a;
+	--new-orange: #ef946c;
+	--hyatt-blue: #0072ce;
+	--dark-purple: #474354;
+}
+
+/* Phone Wrap */
+
+.phone-wrap {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-image: url('../img/main-background.png');
+	background-size: cover;
+	background-position: 50%;
+}
+
+.phone-wrap h1 {
+	width: 100%;
+	height: 100%;
+	padding: 0 20%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.724);
+}
+
+/* Nav Bar */
+
+.navBar {
+	background: rgba(255, 255, 255, 0.8);
+	z-index: 4;
+	opacity: 0;
+	display: flex;
+	position: fixed;
+	width: calc(100% - 40px);
+	padding: 15px 20px;
+	justify-content: space-between;
+}
+
+.navBar .sideMenuButton img {
+	height: 20px;
+	cursor: pointer;
+}
+
+.navBarRightHold {
+	width: 29px;
+}
+
+.navBar-animation-in {
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Side Menu */
+.xIcon {
+	height: 20px;
+}
+
+.sideMenu {
+	width: 280px;
+	height: 400px;
+	margin-left: -320px;
+	z-index: 10;
+	position: absolute;
+	background: white;
+	border-radius: 0 0 16px 0;
+}
+
+.menu-open {
+	margin-left: 0;
+}
+
+.sideMenuClose img {
+	height: 25px;
+	margin-left: 85%;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.sideMenuList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.sideMenuList a {
+	border-bottom: 1px solid lightgray;
+	width: 75%;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	text-decoration: none;
+	color: var(--rich-purple);
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.tour-title {
+	position: absolute;
+	width: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	height: 220px;
+	text-align: center;
+	flex-direction: column;
+}
+
+.tour-title span {
+	transform: translateY(20px);
+	color: white;
+	font-weight: 400;
+	font-size: 35px;
+	letter-spacing: 0.04em;
+}
+
+.tour-map-link {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.7);
+	transform: translate(40vw, 80px);
+}
+
+.tour-map-link p {
+	margin-top: -5px;
+}
+
+.tour-map-link img {
+	height: 30px;
+}
+
+/* SFORS Tour */
+
+.sfors-tour-wrapper {
+	width: 100vw;
+	height: calc(var(--vh, 1vh) * 100);
+	background: url('../img/main-background.png');
+	background-size: cover;
+	background-position: 60% 60%;
+	overflow: hidden;
+	transition: all 1s ease-in-out;
+}
+
+.sfors-tour-distance {
+	width: 100%;
+	text-align: center;
+	padding: 15px 0;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.orange-text {
+	color: var(--new-orange);
+}
+
+.tour-grid {
+	margin: 20px auto;
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 9fr;
+	font-weight: 300;
+}
+
+.side-icon {
+	height: 180px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.side-icon-outer {
+	height: 24px;
+	width: 24px;
+	background-color: var(--hyatt-purple);
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
+
+.side-icon-inner {
+	height: 8px;
+	width: 8px;
+	background-color: white;
+	border-radius: 8px;
+}
+
+.gray-line {
+	width: 1px;
+	position: absolute;
+	background: gray;
+	height: 180px;
+}
+
+.tour-grid-stop-card-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 140px;
+	overflow: hidden;
+}
+
+.tour-grid-stop {
+	height: 180px;
+}
+
+.tour-grid-stop-title {
+	padding-left: 15px;
+}
+
+.tour-stop-minutes {
+	padding-left: 10px;
+}
+
+.tour-grid-stop-card {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	border-radius: 10px;
+	width: 95%;
+	background: white;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	overflow: hidden;
+}
+
+.tour-grid-stop-card-img {
+	background: url('../img/ferry-building.png');
+	background-size: cover;
+	width: 80px;
+}
+
+.tour-grid-stop-card-words {
+	padding: 5px 10px 10px 10px;
+}
+.tour-grid-stop-card-words-title {
+	font-size: 14px;
+	padding-bottom: 6px;
+}
+
+.tour-grid-stop-card-words-descrip {
+	font-size: 10px;
+	line-height: 15px;
+}
+
+/* Modal for Stops */
+
+.close-modal {
+	z-index: 5;
+	position: fixed;
+	top: 15px;
+	left: 90%;
+}
+
+.close-modal img {
+	height: 20px;
+}
+
+.stop-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 100vw;
+	transform: translate(-50%, -50%);
+	height: calc(var(--vh, 1vh) * 100);
+	z-index: 3;
+	background: white;
+	overflow: auto;
+}
+
+.modal-img {
+	height: 300px;
+	background-size: contain;
+}
+
+.modal-title {
+	margin: 10px 0 10px 30px;
+	font-size: 24px;
+	color: #474354;
+}
+
+.modal-number-map {
+	display: flex;
+	justify-content: space-around;
+	margin: 20px 30px;
+	align-items: center;
+	font-weight: 300;
+}
+
+.modal-map {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.modal-number-container {
+	display: flex;
+	align-items: center;
+}
+
+.modal-number {
+	color: #474354;
+	font-size: 18px;
+	margin-left: 10px;
+}
+
+.modal-map img {
+	height: 24px;
+	margin-right: 5px;
+}
+
+.modal-description {
+	margin: 10px 15px 15px 15px;
+	font-weight: 300;
+	text-indent: 20px;
+}
+
+.modal-description p {
+	margin: 10px 0;
+	line-height: 25px;
+}
+
+.modal-buttons {
+	margin: 30px 30px 90px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.modal-buttons div {
+	height: 35px;
+	width: 90px;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	background: var(--hyatt-purple);
+	cursor: pointer;
+}
+
+.modal-tour-button {
+	background: var(--new-orange) !important;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 416px) {
+	.sfors-tour-wrapper {
+		display: none;
+	}
+
+	.tour-contents {
+		display: none;
+	}
+
+	.phone-wrap {
+		display: flex;
+	}
+}
