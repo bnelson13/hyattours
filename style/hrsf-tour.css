@@ -95,7 +95,7 @@ body {
 	height: 400px;
 	margin-left: -320px;
 	z-index: 10;
-	position: absolute;
+	position: fixed;
 	background: white;
 	border-radius: 0 0 16px 0;
 }
@@ -261,6 +261,7 @@ body {
 	background: white;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	overflow: hidden;
+	min-height: 100px;
 }
 
 .tour-grid-stop-card-img {
@@ -358,10 +359,28 @@ body {
 .modal-description p {
 	margin: 10px 0;
 	line-height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-stop-inner-img {
+	max-width: 250px;
+	max-height: 200px;
+}
+
+.modal-stop-inner-img-caption {
+	font-size: 10px;
+	font-style: italic;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: rgb(32, 32, 32);
 }
 
 .modal-buttons {
-	margin: 30px 30px 90px 30px;
+	margin: 30px 20px 90px 20px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
